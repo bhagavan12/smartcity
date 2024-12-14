@@ -27,7 +27,8 @@ const GeoapifyAutocomplete = () => {
     const [currentPlaceName, setCurrentPlaceName] = useState('');
     const [currentPlaceId, setCurrentPlaceId] = useState('');
     const [defaultCategoryDetails, setDefaultCategoryDetails] = useState([]);
-    const apiKey = '0cc2a82797bd414980449587534fb550';
+    // const apiKey = '0cc2a82797bd414980449587534fb550';
+    const apiKey = process.env.REACT_APP_API_KEY;
     useEffect(() => {
         // Check localStorage for Geoapify data
         const userr = localStorage.getItem('user');
